@@ -6,14 +6,14 @@
   "name": "com.cavrnus.chat",
   "displayName": "Cavrnus Chat",
   "documentationUrl": "https://cavrnus.atlassian.net/wiki/spaces/CSM/pages/815136772/Cavrnus+Knowledge+Base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2022.3",
   "description": "This package integrates the chat system through properties.",
   "publishConfig": {
     "registry": "https://packages.cavrn.us/"
   },
   "dependencies": {
-    "com.cavrnus.csc": "2.8.1"
+    "com.cavrnus.csc": "2.9.0"
   },
   "repository": {
     "type": "git",

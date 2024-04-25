@@ -61,7 +61,7 @@ namespace Cavrnus.Chat
             var chatObj = Instantiate(chatEntryPrefab, chatEntryContainer);
             chatObj.GetComponent<ChatMenuEntry>().Setup(spaceConn, item, DeleteChat);
             
-            createdChats.Add(item.OpConnectionId, chatObj);
+            createdChats.Add(item.ObjectProperties.Id, chatObj);
         }
         
         private void DeleteChat(IChatViewModel chat)
@@ -74,7 +74,7 @@ namespace Cavrnus.Chat
             var obj = createdChats[item.OpConnectionId];
             
             Destroy(obj);
-            createdChats.Remove(item.OpConnectionId);
+            createdChats.Remove(item.ObjectProperties.Id);
         }
 
         private void SubmitChat()
